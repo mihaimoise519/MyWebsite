@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<title>My Website</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	
+	<body>
+		<div id="start" class="bgimg" class="unhidden">
+			<div class="bgtext">
+				<h1>I'm Mihai</h1>
+				<p>This is my website</p>
+				<a href="#mid" class="button" role="button" onclick="unhide(); setTimeout(hide, 750);">Take a look</a>
+			</div>
+		</div>
+		
+		<div id="mid" class="hidden">
+			<h2>This is my Website!</h2>
+		</div>
+
+		<div id="about" class="hidden">
+			<img src="about.jpg" alt="aboutimg" class="img1">
+			<h2>About me</h2>
+			<p>Hey I'm Mihai and i just made this website! 
+				I'm 16 years old and i want to become a programmer. 
+				I live in Belgium but I am Romanian. 
+				This is my first "serious" website but I made alot of small websites for practice.</p>
+			<p>Hope you like it :)</p>
+		</div>
+
+		<div id="hobbys" class="hidden">
+			<img src="hobbys.jpg" alt="hobbysimg" class="img2">
+			<h3>Hobby's</h3>
+			<p>I go to the gym. I play games like Minecraft, CsGo, Overwatch and alot more. I am programming somethimes. I am watching alot of YouTube and Netflix.</p>
+		</div>
+
+		<div id="footer" class="hidden">
+			<h4>Contact</h4>
+			<a href="https://www.instagram.com/mihaidaboss/">Instagram</a>
+			<a href="https://www.youtube.com/channel/UCYY0JhAjzP4gAT9X9RoeGYQ?view_as=subscriber">YouTube</a>
+			<a href="https://steamcommunity.com/id/POBUL/">Steam</a>
+		</div>
+
+		<SCRIPT>
+			function unhide()
+			{
+			document.getElementById("mid").classList.toggle('unhidden');
+			document.getElementById("about").classList.toggle('unhidden');
+			document.getElementById("hobbys").classList.toggle('unhidden');
+			document.getElementById("footer").classList.toggle('unhidden');
+			}
+			function hide()
+			{
+			document.getElementById("start").classList.toggle('hidden');
+			}
+		</SCRIPT>
+	</body>
+ </html>
